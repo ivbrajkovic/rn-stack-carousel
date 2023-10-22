@@ -14,6 +14,7 @@ interface StackCarouselItemProps {
   itemWidth?: number;
   offsetX: Animated.SharedValue<number>;
   style?: ViewStyle;
+  children: React.ReactNode;
 }
 
 const styles = StyleSheet.create({

@@ -28,6 +28,7 @@ interface CarouselProps {
   itemHeight?: number | string;
   padding?: number;
   changeThreshold?: number;
+  children: React.ReactNode;
 }
 
 const styles = StyleSheet.create({
