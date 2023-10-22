@@ -7,7 +7,7 @@ Only dependencies are react-native-reanimated and react-native-gesture-handler.
 
 ---
 
-### 🚀 [Demo](https://snack.expo.dev/@ivbrajkovic/rn-stack-slider) - Expo snack example
+### 🚀 [Demo](https://snack.expo.dev/@ivbrajkovic/rn-stack-carousel) - Expo snack sample usage
 
 ---
 
@@ -15,7 +15,7 @@ Only dependencies are react-native-reanimated and react-native-gesture-handler.
 
 ---
 
-## Instalation 
+## Instalation
 
 ```JS
 yarn add react-native-reanimated
@@ -62,4 +62,3 @@ const styles = StyleSheet.create({
   },
 });
 ```
-

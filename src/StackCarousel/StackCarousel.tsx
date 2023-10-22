@@ -1,4 +1,4 @@
-import type { CSSProperties, FC } from "react";
+import type { FC } from "react";
 import React, { Children, memo, useLayoutEffect, useState } from "react";
 import { Dimensions, StyleSheet, ViewStyle } from "react-native";
 import type { PanGestureHandlerGestureEvent } from "react-native-gesture-handler";
@@ -92,7 +92,6 @@ const Carousel: FC<CarouselProps> = memo(
       const childrenArr = Children.toArray(children);
       // If children length is less then 4, clone children to fill 4 items
       for (let i = 0; childrenArr.length > 1 && childrenArr.length < 4; i++)
-        // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
         childrenArr.push(childrenArr[i]!);
       setItems(childrenArr);
     }, [children]);
