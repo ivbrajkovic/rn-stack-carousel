@@ -1,6 +1,6 @@
-import type { FC } from "react";
+import type { CSSProperties, FC } from "react";
 import React, { Children, memo, useLayoutEffect, useState } from "react";
-import { Dimensions, StyleSheet } from "react-native";
+import { Dimensions, StyleSheet, ViewStyle } from "react-native";
 import type { PanGestureHandlerGestureEvent } from "react-native-gesture-handler";
 import {
   GestureHandlerRootView,
@@ -25,7 +25,7 @@ const DEFAULT_CHANGE_THRESHOLD = 80;
 interface CarouselProps {
   disabled?: boolean;
   itemWidth?: number;
-  itemHeight?: number;
+  itemHeight?: number | string;
   padding?: number;
   changeThreshold?: number;
 }
@@ -99,7 +99,7 @@ const Carousel: FC<CarouselProps> = memo(
     return (
       <GestureHandlerRootView style={styles.root}>
         <PanGestureHandler onGestureEvent={gestureHandler}>
-          <Animated.View style={{ height: itemHeight }}>
+          <Animated.View style={{ height: itemHeight } as ViewStyle}>
             {items.map((child, idx) => {
               return (
                 <StackCarouselItem
