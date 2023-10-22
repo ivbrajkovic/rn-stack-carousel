@@ -1,6 +1,6 @@
-# :zap: Simple reactive state
+# :zap: React Native Stack Carousel
 
-### Simple and lightweight image carousel
+### Simple and lightweight image carousel for react native
 
 Simple image carousel for React Native with card stack 3D effect.  
 Only dependencies are react-native-reanimated and react-native-gesture-handler.
